@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informasi ROG</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1a1a1a;
+      z-index: 999;
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(255, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #ff1e1e;
+    }
+
+    .container {
+      padding: 100px 20px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: #ff1e1e;
+      border-left: 4px solid #ff1e1e;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .info-text {
+      color: #dddddd;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+
+    .produk-section {
+      text-align: center;
+      background-color: #121212;
+      padding: 60px 20px;
+      border-radius: 12px;
+    }
+
+    .produk-section h2 {
+      font-size: 30px;
+      color: #ffffff;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #ff1e1e;
+      display: inline-block;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .produk-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .produk-item {
+      width: 120px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .produk-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      filter: drop-shadow(0 0 8px #ff1e1e);
+    }
+
+    .produk-item p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .produk-item:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="informasi.html">Informasi</a>
+  </div>
+
+  <!-- ISI INFORMASI -->
+  <div class="container">
+    <h2 class="section-title">Sejarah ROG</h2>
+    <p class="info-text">
+      Republic of Gamers (ROG) adalah brand yang didirikan oleh ASUS pada tahun 2006, khusus untuk memenuhi kebutuhan para gamer hardcore dan penggemar teknologi performa tinggi. Sejak awal kemunculannya, ROG langsung dikenal sebagai pionir dalam menghadirkan perangkat keras dengan spesifikasi ekstrem, desain futuristik, dan fitur gaming eksklusif.  
+
+      <br><br>Produk ROG pertama yang diluncurkan adalah motherboard ROG Crosshair, yang langsung menarik perhatian komunitas overclocker karena kemampuannya menembus batas performa standar. Seiring waktu, ROG memperluas portofolionya mencakup laptop, kartu grafis, monitor, hingga smartphone gaming ROG Phone.  
+
+      <br><br>ROG juga sangat aktif dalam dunia eSports dan telah menjalin kerja sama dengan banyak tim profesional global. Filosofi desain ROG menggabungkan estetika agresif, pencahayaan RGB, serta efisiensi pendinginan tinggi — menjadikannya ikon di dunia gaming.
+
+      <br><br>Dengan visi "For Those Who Dare", ROG terus mendorong inovasi dan memberikan pengalaman bermain terbaik bagi para gamer dari seluruh dunia.
+    </p>
+  </div>
+
+  <!-- PRODUK -->
+  <section class="produk-section">
+  <h2>Jelajahi Produk Kami</h2>
+  <div class="produk-container">
+    
+    <a href="laptops.html" class="produk-item">
+      <img src="https://dlcdnwebimgs.asus.com/gain/AE927DDC-E861-4B68-A569-F5381F483EFD/w240/h175" alt="Laptops">
+      <p>Laptops</p>
+    </a>
+
+    <a href="motherboards.html" class="produk-item">
+      <img src="https://dlcdnwebimgs.asus.com/gain/0F38E063-066D-4BE3-9284-811CFEA6A0CE/w240/h175" alt="Motherboards">
+      <p>Motherboards</p>
+    </a>
+
+    <a href="graphics.html" class="produk-item">
+      <img src="https://dlcdnwebimgs.asus.com/gain/954F6E07-DF42-414A-BE69-1521EA659ADC/w240/h175" alt="Graphics Cards">
+      <p>Graphics Cards</p>
+    </a>
+
+    <a href="monitors.html" class="produk-item">
+      <img src="https://dlcdnwebimgs.asus.com/gain/44F0B24D-67A0-4716-A88C-B8B621B0D1F7/w240/h175" alt="Monitors">
+      <p>Monitors</p>
+    </a>
+
+    <a href="phones.html" class="produk-item">
+      <img src="https://dlcdnwebimgs.asus.com/gain/A77B9915-4015-4F08-AFFB-42270536B824/w240/h175" alt="Phones">
+      <p>Phones</p>
+    </a>
+
+  </div>
+</section>
+
+<footer style="text-align: center; padding: 20px 0; font-size: 14px; color: #ff1e1e; text-shadow: 0 0 6px red;">
+  Created by Ryu Fawwaz Kamil
+</footer>
+
+</body>
+</html>
