@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda ROG</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .border-left, .border-right {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 4px; /* 🔻 Diperkecil dari 10px ke 4px */
+      background: linear-gradient(180deg, red, orange, yellow, lime, cyan, blue, magenta, red);
+      background-size: 400% 400%;
+      animation: rgbMove 8s linear infinite;
+      z-index: 1;
+    }
+
+    .border-left { left: 0; }
+    .border-right { right: 0; }
+
+    @keyframes rgbMove {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 0% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1a1a1a;
+      z-index: 999;
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(255, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #ff1e1e;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff1e1e;
+      text-shadow: 0 0 15px red;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 18px;
+      color: #cccccc;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: linear-gradient(to right, #ff0000, #770000);
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff0000;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #ff4d4d, #aa0000);
+      box-shadow: 0 0 20px #ff1e1e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">beranda</a>
+    <a href="informasi.html">informasi</a>
+  </div>
+
+  <div class="border-left"></div>
+  <div class="border-right"></div>
+
+  <div class="content">
+    <h1>Welcome to ROG World</h1>
+    <p>Experience the power, style, and dominance of the ultimate gaming gear. Join the Republic now.</p>
+    <a href="informasi.html" class="btn">Lihat Informasi ROG</a>
+  </div>
+
+</body>
+</html>
